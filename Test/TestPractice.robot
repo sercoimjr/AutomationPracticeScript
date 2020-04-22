@@ -12,6 +12,9 @@ Suite Setup         Inicia cenario
 Suite Teardown      Conclui cenario
 Test Teardown       Finaliza teste
 
+# Linha de comando:
+# robot -d result --reporttitle "AME - Test Report" --logtitle "AME - Test Report"  -v BROWSER:headlessfirefox test/testpractice.robot
+
 *** Test Case ***
 #Para o cenario de cadastro de usuário o ideal seria que ele chamasse uma keyword (rotina) para limpar a base antes, assim ele poderia ser executado com uma massa de testes controlada.
 #Infelizmente não é possivel conectar diretamente na base da aplicação para remoção, e nem mesmo remover um usuário cadastrado pela tela da aplicação.Não existe opção para excluir usuário. 

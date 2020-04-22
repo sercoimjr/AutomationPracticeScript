@@ -20,6 +20,7 @@ ${CAMPO_LOGADO}     xpath=//a[@title='View my customer account']/span[.='${FIRST
 #O sistema deve exibir mensagem de erro 
 ${MSG_EXIBIDA}      xpath=//div[@class='alert alert-danger']/ol/li
 
+
 *** Keywords ***
 #Teste para cadastro de participante
 Informar email e avançar para formulario
@@ -28,7 +29,7 @@ Informar email e avançar para formulario
     wait until page contains    Create an account
 
 Logar na aplicação
-    [Arguments]     ${email_login}  ${pass_login}
+    [Arguments]     ${email_login}         ${pass_login}
     
     input text      ${CAMPO_EMAIL}         ${email_login}
     input text      ${CAMPO_PASSWORD}      ${pass_login}
@@ -38,7 +39,7 @@ Deslogar da aplicação
     click link      ${LINK_LOGOUT}
 
 Validar login de participante
-    page should contain element    ${CAMPO_LOGADO}
+    page should contain element             ${CAMPO_LOGADO}
 
 O sistema deve exibir mensagem de erro 
     [Arguments]             ${mensagem_erro}

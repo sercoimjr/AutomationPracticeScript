@@ -1,8 +1,6 @@
 *** Settings ***
-Library     SeleniumLibrary
-
-Resource    ./PO/Common.robot
-Resource    ./PO/DataElements.robot
+Resource    ./PO/Common.robot           #arquivo com instruções comum a qq suite/teste
+Resource    ./PO/DataElements.robot     #arquivo de dados do cadastro
 Resource    ./PO/AddFormPage.robot
 Resource    ./PO/AuthenticationPage.robot
 Resource    ./PO/HomePage.robot
@@ -28,7 +26,7 @@ Dado que estou na página de login
     Navegar para a tela de Cadastro e login
 
 Quando eu efetuo um login válido
-    Logar na aplicação  #com variaveis válidas do arquivo de dados
+    Logar na aplicação  #com dados válidos do arquivo de dados
     ...     ${EMAIL}        ${PASSWORD}
 
 Quando eu efetuo um login com dados inválidos
