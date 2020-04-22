@@ -1,0 +1,26 @@
+Script de automação criado para avaliação, utilizando Microsoft VSC, Python e Robotframework.
+
+Não adicionei arquivo gitignore, pois o objetivo é armazenar todos os arquivos, inclusive o relatório gerado.
+
+Site: http://automationpractice.com/
+
+Escopo: Cadastro, login com sucesso (com usuário cadastrado), Login invalido (credenciais invalidas), Login inválido (mantendo um dos campos sem preenchimento)
+
+Relatório gerado pela ferramenta, no diretório Result.
+
+O script esta setado para ser executado pelo chrome, porém pode ser alterado o browser diretamente pela linha de comando para execução do script, alterando a variavel <BROWSER>.
+EX:
+robot -d result --reporttitle "AME - Test Report" --logtitle "AME - Test Report"  -v BROWSER:headlessfirefox test/testpractice.robot
+
+    Script executa a suite de testes com o browser firefox em headless, armazenando relatorio no diretório Result, e customizando o título do relatório gerado.
+
+Criação de cenarios em Gherkin (BDD).
+1ª camada em abstração Gherkin,
+2ª camada em abordagem descritiva,
+3ª camada usando Page Objects.
+
+Descrevendo cenários de teste dessa forma o relatório gerado pode ser lido por qualquer pessoa, e será facilmente identificado onde uma falha ocorreu. Ajuda bastante também para manutenção de scripts, pois é mais fácil de isolar onde ocorreu o problema.
+
+Ao longo do script eu inseri comentario para explicar o fluxo ou sobre algum tipo de limitação na aplicação, como para a exclusão de um usuário já existente. O sistema não permite a exclusão do usuário cadastrado, logo não é possivel criar uma rotina para exclusão do usuário previamente cadastrado, para nova execução da regressão. 
+Neste caso existem duas opções, ou se utiliza uma entrada de dados externa (Data Driven), ou se altera na mão a massa no arquivo Resource>PO>DataElements.robot
+Mantive da forma mais simples, então será necessario alterar o email da massa de testes a cada nova execução.
