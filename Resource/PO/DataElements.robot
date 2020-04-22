@@ -6,7 +6,7 @@ ${URL}              http://automationpractice.com/
 #Variaveis de cadastro de usuário
 ${FIRST_NAME}       Marcos
 ${LAST_NAME}        Junior
-${EMAIL}            sergio14@ame.com
+${EMAIL}            sergio15@ame.com
 ${PASSWORD}         pass123
 ${COMPANY}          Ame Digital
 ${ADDRESS}          Endereço, 12
