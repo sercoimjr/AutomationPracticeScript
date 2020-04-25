@@ -34,7 +34,7 @@ ${MES_CADASTRO}         Welcome to your account. Here you can manage all of your
 
 *** Keywords ***
 Preencher formulario de cadastro
-    #Dados declarados no arquivo DataElements
+    #Dados declarados no arquivo DataElements.robot
     click element               ${CAMPO_GENERO}
     input text                  ${CAMPO_CUST_FNAME}         ${FIRST_NAME}
     input text                  ${CAMPO_CUST_LNAME}         ${LAST_NAME}

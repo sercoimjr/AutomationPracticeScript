@@ -26,7 +26,6 @@ CT001: Cadastrar usuário
     Quando eu efetuo um novo cadastro
     Então o sistema exibe mesagem de boas vindas 
 
-
 CT002: Efetuar login com sucesso
     [Tags]      smoke
     [Documentation]     RN02: Deve ser possível logar-se na aplicação
@@ -36,7 +35,7 @@ CT002: Efetuar login com sucesso
     Então o sistema exibe o meu nome na área logada 
 
 
-#Testes de exceção com passagem de parametros para a keyword que é chamada pelos 3 cenarios
+#Testes de exceção com passagem de parametros para a mesma keyword que é chamada pelos 3 diferentes cenarios
 #CT003 envia dados invalidos para email e login
 CT003: Login com dados inválidos
     [Tags]      exceção

@@ -1,10 +1,12 @@
 *** Settings ***
-Library     SeleniumLibrary
+Library             SeleniumLibrary
+
 
 *** Variable ***
 #Informar email e avançar para formulario
 ${INPUT_EMAIL}      id=email_create
 ${BTN_CADASTRO}     id=SubmitCreate
+${ESPERA_LABEL}     Create an account
 
 #Logar na aplicação
 ${CAMPO_EMAIL}      id=email
@@ -14,19 +16,16 @@ ${BTN_LOGIN}        id=SubmitLogin
 #Deslogar da aplicação
 ${LINK_LOGOUT}      xpath=//a[@class='logout']
 
-#Validar login de participante
-${CAMPO_LOGADO}     xpath=//a[@title='View my customer account']/span[.='${FIRST_NAME} ${LAST_NAME}']
-
 #O sistema deve exibir mensagem de erro 
 ${MSG_EXIBIDA}      xpath=//div[@class='alert alert-danger']/ol/li
 
 
 *** Keywords ***
-#Teste para cadastro de participante
+
 Informar email e avançar para formulario
     input text                  ${INPUT_EMAIL}      ${EMAIL}
     click button                ${BTN_CADASTRO}   
-    wait until page contains    Create an account
+    wait until page contains    ${ESPERA_LABEL}  
 
 Logar na aplicação
     [Arguments]     ${email_login}         ${pass_login}
@@ -38,9 +37,11 @@ Logar na aplicação
 Deslogar da aplicação
     click link      ${LINK_LOGOUT}
 
-Validar login de participante
-    page should contain element             ${CAMPO_LOGADO}
+#Verifica se o nome do funcionarioé exibido no topo da página. Dados gerados no arquivo Common.robot
+Validar login de participante 
+    page should contain element             xpath=//a[@title='View my customer account']/span[.='${FIRST_NAME} ${LAST_NAME}']
 
+#Captura a mensagem exibida em tela e a compara com a mensagem especificada no cenario de teste
 O sistema deve exibir mensagem de erro 
     [Arguments]             ${mensagem_erro}
     ${mensagem_tela}=       get text            ${MSG_EXIBIDA}

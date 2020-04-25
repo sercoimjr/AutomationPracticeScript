@@ -15,8 +15,7 @@ ${LABEL_AUT_LOGIN}      Authentication
 *** Keywords ***
 
 Acessar a home page da aplicação
-
-    #Verificação se já está logado, pelo nome apresentado na página. Se estiver, chama keyword para deslogar e continua o teste.
+    #Verificação se já está logado, verificando se o nome do funcionario é apresentado na página. Se estiver, chama keyword para deslogar e continua o teste.
     #É necessario deslogar da aplicação para que os cenários de login possam ser executados 
     ${campo_nome}=    run keyword and return status    
     ...                 element should be visible        ${USER_LOGADO} 

@@ -26,6 +26,7 @@ Dado que estou na página de login
     Navegar para a tela de Cadastro e login
 
 Quando eu efetuo um login válido
+    #Dados gerados para massa, em Common.robot
     Logar na aplicação  #com dados válidos do arquivo de dados
     ...     ${EMAIL}        ${PASSWORD}
 
