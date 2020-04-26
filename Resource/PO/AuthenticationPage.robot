@@ -37,7 +37,7 @@ Logar na aplicação
 Deslogar da aplicação
     click link      ${LINK_LOGOUT}
 
-#Verifica se o nome do funcionarioé exibido no topo da página. Dados gerados no arquivo Common.robot
+#Verifica se o nome do funcionario é exibido no topo da página. Massa de dados utilizada gerada no arquivo DataElements.robot
 Validar login de participante 
     page should contain element             xpath=//a[@title='View my customer account']/span[.='${FIRST_NAME} ${LAST_NAME}']
 

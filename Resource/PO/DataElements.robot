@@ -1,5 +1,6 @@
 *** Settings ***
-Library           SeleniumLibrary
+Library             SeleniumLibrary
+Library             FakerLibrary
 
 *** Variable ***
 
@@ -21,3 +22,19 @@ ${CITY}             São Paulo
 ${POSTCODE}         12345
 ${PHONE}            11992211211
 ${ALIAS}            Casa 
+
+*** Keywords ***
+    
+#setando as variaveis que utilizam faker para geração de dados
+Gera nova massa de teste
+    ${temp_email}=              FakerLibrary.email
+    ${temp_fname}=              FakerLibrary.first_name
+    ${temp_lname}=              FakerLibrary.last_name
+    Set Global variable         ${FIRST_NAME}       ${temp_fname}
+    Set Global variable         ${LAST_NAME}        ${temp_lname}    
+    Set Global variable         ${EMAIL}            ${temp_email}   
+
+    #Dados gerados na massa
+    Log                         ${FIRST_NAME} 
+    Log                         ${LAST_NAME}
+    Log                         ${EMAIL} 

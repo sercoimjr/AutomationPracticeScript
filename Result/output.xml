@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200425 18:08:11.058" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200425 23:27:49.370" rpa="false">
 <suite id="s1" name="Testpractice" source="D:\RobotScripts\AME_TestPractice\test\testpractice.robot">
 <kw name="Inicia cenario" library="Common" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,8 +8,8 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:11.769" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200425 18:08:11.769" endtime="20200425 18:08:15.046"></status>
+<msg timestamp="20200425 23:27:50.097" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200425 23:27:50.097" endtime="20200425 23:27:53.497"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -17,36 +17,36 @@
 <arg>1200</arg>
 <arg>800</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:08:15.046" endtime="20200425 18:08:17.167"></status>
+<status status="PASS" starttime="20200425 23:27:53.497" endtime="20200425 23:27:55.620"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:08:17.167" endtime="20200425 18:08:17.172"></status>
+<status status="PASS" starttime="20200425 23:27:55.621" endtime="20200425 23:27:55.627"></status>
 </kw>
-<kw name="Gera dados para novo cadastro" library="Common">
+<kw name="Gera nova massa de teste" library="DataElements">
 <kw name="Email" library="FakerLibrary">
 <assign>
 <var>${temp_email}</var>
 </assign>
-<msg timestamp="20200425 18:08:17.175" level="INFO">${temp_email} = patricia32@yahoo.com</msg>
-<status status="PASS" starttime="20200425 18:08:17.174" endtime="20200425 18:08:17.175"></status>
+<msg timestamp="20200425 23:27:55.639" level="INFO">${temp_email} = jfrey@gonzales.net</msg>
+<status status="PASS" starttime="20200425 23:27:55.630" endtime="20200425 23:27:55.639"></status>
 </kw>
 <kw name="First Name" library="FakerLibrary">
 <assign>
 <var>${temp_fname}</var>
 </assign>
-<msg timestamp="20200425 18:08:17.177" level="INFO">${temp_fname} = Linda</msg>
-<status status="PASS" starttime="20200425 18:08:17.176" endtime="20200425 18:08:17.177"></status>
+<msg timestamp="20200425 23:27:55.641" level="INFO">${temp_fname} = Christine</msg>
+<status status="PASS" starttime="20200425 23:27:55.640" endtime="20200425 23:27:55.641"></status>
 </kw>
 <kw name="Last Name" library="FakerLibrary">
 <assign>
 <var>${temp_lname}</var>
 </assign>
-<msg timestamp="20200425 18:08:17.179" level="INFO">${temp_lname} = Mckenzie</msg>
-<status status="PASS" starttime="20200425 18:08:17.177" endtime="20200425 18:08:17.179"></status>
+<msg timestamp="20200425 23:27:55.644" level="INFO">${temp_lname} = Rodriguez</msg>
+<status status="PASS" starttime="20200425 23:27:55.642" endtime="20200425 23:27:55.644"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
@@ -54,8 +54,8 @@
 <arg>${FIRST_NAME}</arg>
 <arg>${temp_fname}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:17.180" level="INFO">${FIRST_NAME} = Linda</msg>
-<status status="PASS" starttime="20200425 18:08:17.179" endtime="20200425 18:08:17.181"></status>
+<msg timestamp="20200425 23:27:55.646" level="INFO">${FIRST_NAME} = Christine</msg>
+<status status="PASS" starttime="20200425 23:27:55.645" endtime="20200425 23:27:55.646"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
@@ -63,8 +63,8 @@
 <arg>${LAST_NAME}</arg>
 <arg>${temp_lname}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:17.182" level="INFO">${LAST_NAME} = Mckenzie</msg>
-<status status="PASS" starttime="20200425 18:08:17.181" endtime="20200425 18:08:17.182"></status>
+<msg timestamp="20200425 23:27:55.647" level="INFO">${LAST_NAME} = Rodriguez</msg>
+<status status="PASS" starttime="20200425 23:27:55.646" endtime="20200425 23:27:55.647"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
@@ -72,36 +72,36 @@
 <arg>${EMAIL}</arg>
 <arg>${temp_email}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:17.184" level="INFO">${EMAIL} = patricia32@yahoo.com</msg>
-<status status="PASS" starttime="20200425 18:08:17.183" endtime="20200425 18:08:17.184"></status>
+<msg timestamp="20200425 23:27:55.648" level="INFO">${EMAIL} = jfrey@gonzales.net</msg>
+<status status="PASS" starttime="20200425 23:27:55.647" endtime="20200425 23:27:55.648"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${FIRST_NAME}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:17.186" level="INFO">Linda</msg>
-<status status="PASS" starttime="20200425 18:08:17.185" endtime="20200425 18:08:17.186"></status>
+<msg timestamp="20200425 23:27:55.648" level="INFO">Christine</msg>
+<status status="PASS" starttime="20200425 23:27:55.648" endtime="20200425 23:27:55.648"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${LAST_NAME}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:17.188" level="INFO">Mckenzie</msg>
-<status status="PASS" starttime="20200425 18:08:17.187" endtime="20200425 18:08:17.189"></status>
+<msg timestamp="20200425 23:27:55.649" level="INFO">Rodriguez</msg>
+<status status="PASS" starttime="20200425 23:27:55.649" endtime="20200425 23:27:55.649"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${EMAIL}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:17.190" level="INFO">patricia32@yahoo.com</msg>
-<status status="PASS" starttime="20200425 18:08:17.189" endtime="20200425 18:08:17.190"></status>
+<msg timestamp="20200425 23:27:55.650" level="INFO">jfrey@gonzales.net</msg>
+<status status="PASS" starttime="20200425 23:27:55.650" endtime="20200425 23:27:55.650"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:17.173" endtime="20200425 18:08:17.190"></status>
+<status status="PASS" starttime="20200425 23:27:55.628" endtime="20200425 23:27:55.651"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:11.769" endtime="20200425 18:08:17.191"></status>
+<status status="PASS" starttime="20200425 23:27:50.097" endtime="20200425 23:27:55.651"></status>
 </kw>
 <test id="s1-t1" name="CT001: Cadastrar usuário">
 <kw name="Dado que estou na página de cadastro de usuário" library="TestPractice_web">
@@ -122,14 +122,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:08:22.576" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:08:22.256" endtime="20200425 18:08:22.576"></status>
+<msg timestamp="20200425 23:28:00.955" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:00.663" endtime="20200425 23:28:00.955"></status>
 </kw>
-<msg timestamp="20200425 18:08:22.578" level="FAIL">Element with locator 'xpath=//a[@title='View my customer account']/span' not found.</msg>
-<status status="FAIL" starttime="20200425 18:08:17.199" endtime="20200425 18:08:22.578"></status>
+<msg timestamp="20200425 23:28:00.957" level="FAIL">Element with locator 'xpath=//a[@title='View my customer account']/span' not found.</msg>
+<status status="FAIL" starttime="20200425 23:27:55.655" endtime="20200425 23:28:00.957"></status>
 </kw>
-<msg timestamp="20200425 18:08:22.578" level="INFO">${campo_nome} = False</msg>
-<status status="PASS" starttime="20200425 18:08:17.198" endtime="20200425 18:08:22.579"></status>
+<msg timestamp="20200425 23:28:00.957" level="INFO">${campo_nome} = False</msg>
+<status status="PASS" starttime="20200425 23:27:55.655" endtime="20200425 23:28:00.958"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -137,25 +137,25 @@
 <arg>${campo_nome}</arg>
 <arg>Deslogar da aplicação</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:08:22.579" endtime="20200425 18:08:22.579"></status>
+<status status="PASS" starttime="20200425 23:28:00.958" endtime="20200425 23:28:00.958"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:22.579" level="INFO">Opening url 'http://automationpractice.com/'</msg>
-<status status="PASS" starttime="20200425 18:08:22.579" endtime="20200425 18:08:35.724"></status>
+<msg timestamp="20200425 23:28:00.958" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20200425 23:28:00.958" endtime="20200425 23:28:13.690"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>${TIULO_AUT_PAGINA}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:35.754" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200425 18:08:35.725" endtime="20200425 18:08:35.754"></status>
+<msg timestamp="20200425 23:28:13.695" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20200425 23:28:13.690" endtime="20200425 23:28:13.695"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:17.196" endtime="20200425 18:08:35.754"></status>
+<status status="PASS" starttime="20200425 23:27:55.654" endtime="20200425 23:28:13.696"></status>
 </kw>
 <kw name="Navegar para a tela de Cadastro e login" library="HomePage">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -163,19 +163,19 @@
 <arguments>
 <arg>${BTN_AUT_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:35.755" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
-<status status="PASS" starttime="20200425 18:08:35.755" endtime="20200425 18:08:37.612"></status>
+<msg timestamp="20200425 23:28:13.697" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
+<status status="PASS" starttime="20200425 23:28:13.696" endtime="20200425 23:28:15.069"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${LABEL_AUT_LOGIN}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:08:37.612" endtime="20200425 18:08:37.632"></status>
+<status status="PASS" starttime="20200425 23:28:15.070" endtime="20200425 23:28:15.558"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:35.755" endtime="20200425 18:08:37.632"></status>
+<status status="PASS" starttime="20200425 23:28:13.696" endtime="20200425 23:28:15.558"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:17.195" endtime="20200425 18:08:37.632"></status>
+<status status="PASS" starttime="20200425 23:27:55.653" endtime="20200425 23:28:15.558"></status>
 </kw>
 <kw name="Quando eu efetuo um novo cadastro" library="TestPractice_web">
 <kw name="Informar email e avançar para formulario" library="AuthenticationPage">
@@ -185,25 +185,25 @@
 <arg>${INPUT_EMAIL}</arg>
 <arg>${EMAIL}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:37.634" level="INFO">Typing text 'patricia32@yahoo.com' into text field 'id=email_create'.</msg>
-<status status="PASS" starttime="20200425 18:08:37.634" endtime="20200425 18:08:37.792"></status>
+<msg timestamp="20200425 23:28:15.561" level="INFO">Typing text 'jfrey@gonzales.net' into text field 'id=email_create'.</msg>
+<status status="PASS" starttime="20200425 23:28:15.560" endtime="20200425 23:28:15.709"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${BTN_CADASTRO}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:37.793" level="INFO">Clicking button 'id=SubmitCreate'.</msg>
-<status status="PASS" starttime="20200425 18:08:37.793" endtime="20200425 18:08:37.902"></status>
+<msg timestamp="20200425 23:28:15.709" level="INFO">Clicking button 'id=SubmitCreate'.</msg>
+<status status="PASS" starttime="20200425 23:28:15.709" endtime="20200425 23:28:15.811"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${ESPERA_LABEL}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:08:37.903" endtime="20200425 18:08:37.924"></status>
+<status status="PASS" starttime="20200425 23:28:15.811" endtime="20200425 23:28:15.831"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:37.634" endtime="20200425 18:08:37.924"></status>
+<status status="PASS" starttime="20200425 23:28:15.560" endtime="20200425 23:28:15.832"></status>
 </kw>
 <kw name="Preencher formulario de cadastro" library="AddFormPage">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -211,8 +211,8 @@
 <arguments>
 <arg>${CAMPO_GENERO}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:37.926" level="INFO">Clicking element 'id=uniform-id_gender1'.</msg>
-<status status="PASS" starttime="20200425 18:08:37.925" endtime="20200425 18:08:40.000"></status>
+<msg timestamp="20200425 23:28:15.832" level="INFO">Clicking element 'id=uniform-id_gender1'.</msg>
+<status status="PASS" starttime="20200425 23:28:15.832" endtime="20200425 23:28:18.027"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -220,8 +220,8 @@
 <arg>${CAMPO_CUST_FNAME}</arg>
 <arg>${FIRST_NAME}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.001" level="INFO">Typing text 'Linda' into text field 'id=customer_firstname'.</msg>
-<status status="PASS" starttime="20200425 18:08:40.001" endtime="20200425 18:08:40.116"></status>
+<msg timestamp="20200425 23:28:18.028" level="INFO">Typing text 'Christine' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20200425 23:28:18.027" endtime="20200425 23:28:18.166"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -229,8 +229,8 @@
 <arg>${CAMPO_CUST_LNAME}</arg>
 <arg>${LAST_NAME}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.116" level="INFO">Typing text 'Mckenzie' into text field 'id=customer_lastname'.</msg>
-<status status="PASS" starttime="20200425 18:08:40.116" endtime="20200425 18:08:40.257"></status>
+<msg timestamp="20200425 23:28:18.167" level="INFO">Typing text 'Rodriguez' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20200425 23:28:18.167" endtime="20200425 23:28:18.308"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -238,8 +238,8 @@
 <arg>${CAMPO_FORM_EMAIL}</arg>
 <arg>${EMAIL}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.258" level="INFO">Typing text 'patricia32@yahoo.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20200425 18:08:40.257" endtime="20200425 18:08:40.461"></status>
+<msg timestamp="20200425 23:28:18.309" level="INFO">Typing text 'jfrey@gonzales.net' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200425 23:28:18.308" endtime="20200425 23:28:18.500"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -247,8 +247,8 @@
 <arg>${CAMPO_FORM_PASS}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.462" level="INFO">Typing text 'pass123' into text field 'id=passwd'.</msg>
-<status status="PASS" starttime="20200425 18:08:40.462" endtime="20200425 18:08:40.583"></status>
+<msg timestamp="20200425 23:28:18.500" level="INFO">Typing text 'pass123' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20200425 23:28:18.500" endtime="20200425 23:28:18.618"></status>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -256,8 +256,8 @@
 <arg>${CAMPO_DIA}</arg>
 <arg>${OPCAO_DIA}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.584" level="INFO">Selecting options from selection list 'id=days' by value 10.</msg>
-<status status="PASS" starttime="20200425 18:08:40.583" endtime="20200425 18:08:40.672"></status>
+<msg timestamp="20200425 23:28:18.618" level="INFO">Selecting options from selection list 'id=days' by value 10.</msg>
+<status status="PASS" starttime="20200425 23:28:18.618" endtime="20200425 23:28:18.728"></status>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -265,8 +265,8 @@
 <arg>${CAMPO_MES}</arg>
 <arg>${OPCAO_MES}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.673" level="INFO">Selecting options from selection list 'id=months' by value 5.</msg>
-<status status="PASS" starttime="20200425 18:08:40.673" endtime="20200425 18:08:40.781"></status>
+<msg timestamp="20200425 23:28:18.728" level="INFO">Selecting options from selection list 'id=months' by value 5.</msg>
+<status status="PASS" starttime="20200425 23:28:18.728" endtime="20200425 23:28:18.816"></status>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -274,8 +274,8 @@
 <arg>${CAMPO_ANO}</arg>
 <arg>${OPCAO_ANO}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.781" level="INFO">Selecting options from selection list 'id=years' by value 1990.</msg>
-<status status="PASS" starttime="20200425 18:08:40.781" endtime="20200425 18:08:40.874"></status>
+<msg timestamp="20200425 23:28:18.816" level="INFO">Selecting options from selection list 'id=years' by value 1990.</msg>
+<status status="PASS" starttime="20200425 23:28:18.816" endtime="20200425 23:28:18.903"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -283,8 +283,8 @@
 <arg>${CAMPO_FIRSTNAME}</arg>
 <arg>${FIRST_NAME}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.875" level="INFO">Typing text 'Linda' into text field 'id=firstname'.</msg>
-<status status="PASS" starttime="20200425 18:08:40.874" endtime="20200425 18:08:40.986"></status>
+<msg timestamp="20200425 23:28:18.904" level="INFO">Typing text 'Christine' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20200425 23:28:18.903" endtime="20200425 23:28:19.032"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -292,8 +292,8 @@
 <arg>${CAMPO_LASTNAME}</arg>
 <arg>${LAST_NAME}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:40.987" level="INFO">Typing text 'Mckenzie' into text field 'id=lastname'.</msg>
-<status status="PASS" starttime="20200425 18:08:40.987" endtime="20200425 18:08:41.112"></status>
+<msg timestamp="20200425 23:28:19.033" level="INFO">Typing text 'Rodriguez' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20200425 23:28:19.033" endtime="20200425 23:28:19.183"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -301,8 +301,8 @@
 <arg>${CAMPO_COMPANY}</arg>
 <arg>${COMPANY}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:41.113" level="INFO">Typing text 'AME Digital' into text field 'id=company'.</msg>
-<status status="PASS" starttime="20200425 18:08:41.113" endtime="20200425 18:08:41.264"></status>
+<msg timestamp="20200425 23:28:19.183" level="INFO">Typing text 'AME Digital' into text field 'id=company'.</msg>
+<status status="PASS" starttime="20200425 23:28:19.183" endtime="20200425 23:28:19.323"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -310,8 +310,8 @@
 <arg>${CAMPO_ADDRESS}</arg>
 <arg>${ADDRESS}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:41.264" level="INFO">Typing text 'Av Endereço, 12' into text field 'id=address1'.</msg>
-<status status="PASS" starttime="20200425 18:08:41.264" endtime="20200425 18:08:41.426"></status>
+<msg timestamp="20200425 23:28:19.324" level="INFO">Typing text 'Av Endereço, 12' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20200425 23:28:19.323" endtime="20200425 23:28:19.502"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -319,8 +319,8 @@
 <arg>${CAMPO_CITY}</arg>
 <arg>${CITY}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:41.427" level="INFO">Typing text 'São Paulo' into text field 'id=city'.</msg>
-<status status="PASS" starttime="20200425 18:08:41.427" endtime="20200425 18:08:41.565"></status>
+<msg timestamp="20200425 23:28:19.502" level="INFO">Typing text 'São Paulo' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20200425 23:28:19.502" endtime="20200425 23:28:19.626"></status>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -328,8 +328,8 @@
 <arg>${CAMPO_ESTADO}</arg>
 <arg>${OPCAO_ESTADO}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:41.566" level="INFO">Selecting options from selection list 'id=id_state' by value 44.</msg>
-<status status="PASS" starttime="20200425 18:08:41.565" endtime="20200425 18:08:41.645"></status>
+<msg timestamp="20200425 23:28:19.627" level="INFO">Selecting options from selection list 'id=id_state' by value 44.</msg>
+<status status="PASS" starttime="20200425 23:28:19.627" endtime="20200425 23:28:19.714"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -337,8 +337,8 @@
 <arg>${CAMPO_POSTCODE}</arg>
 <arg>${POSTCODE}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:41.645" level="INFO">Typing text '12345' into text field 'id=postcode'.</msg>
-<status status="PASS" starttime="20200425 18:08:41.645" endtime="20200425 18:08:41.759"></status>
+<msg timestamp="20200425 23:28:19.715" level="INFO">Typing text '12345' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20200425 23:28:19.714" endtime="20200425 23:28:19.832"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -346,8 +346,8 @@
 <arg>${CAMPO_MOBILE}</arg>
 <arg>${PHONE}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:41.759" level="INFO">Typing text '11992211211' into text field 'id=phone_mobile'.</msg>
-<status status="PASS" starttime="20200425 18:08:41.759" endtime="20200425 18:08:41.891"></status>
+<msg timestamp="20200425 23:28:19.832" level="INFO">Typing text '11992211211' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20200425 23:28:19.832" endtime="20200425 23:28:19.976"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -355,12 +355,12 @@
 <arg>${CAMPO_ALIAS}</arg>
 <arg>${ALIAS}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:41.892" level="INFO">Typing text 'Casa' into text field 'id=alias'.</msg>
-<status status="PASS" starttime="20200425 18:08:41.891" endtime="20200425 18:08:42.000"></status>
+<msg timestamp="20200425 23:28:19.976" level="INFO">Typing text 'Casa' into text field 'id=alias'.</msg>
+<status status="PASS" starttime="20200425 23:28:19.976" endtime="20200425 23:28:20.088"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:37.925" endtime="20200425 18:08:42.000"></status>
+<status status="PASS" starttime="20200425 23:28:15.832" endtime="20200425 23:28:20.088"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:37.633" endtime="20200425 18:08:42.001"></status>
+<status status="PASS" starttime="20200425 23:28:15.560" endtime="20200425 23:28:20.088"></status>
 </kw>
 <kw name="Então o sistema exibe mesagem de boas vindas" library="TestPractice_web">
 <kw name="Concluir cadastro válido" library="AddFormPage">
@@ -369,34 +369,34 @@
 <arguments>
 <arg>${BTN_SUBMIT_FORM}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:42.002" level="INFO">Clicking button 'id=submitAccount'.</msg>
-<status status="PASS" starttime="20200425 18:08:42.002" endtime="20200425 18:08:43.729"></status>
+<msg timestamp="20200425 23:28:20.090" level="INFO">Clicking button 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20200425 23:28:20.089" endtime="20200425 23:28:21.726"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${MES_CADASTRO}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:43.754" level="INFO">Current page contains text 'Welcome to your account. Here you can manage all of your personal information and orders.'.</msg>
-<status status="PASS" starttime="20200425 18:08:43.729" endtime="20200425 18:08:43.754"></status>
+<msg timestamp="20200425 23:28:21.761" level="INFO">Current page contains text 'Welcome to your account. Here you can manage all of your personal information and orders.'.</msg>
+<status status="PASS" starttime="20200425 23:28:21.726" endtime="20200425 23:28:21.761"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:42.001" endtime="20200425 18:08:43.754"></status>
+<status status="PASS" starttime="20200425 23:28:20.089" endtime="20200425 23:28:21.762"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:42.001" endtime="20200425 18:08:43.754"></status>
+<status status="PASS" starttime="20200425 23:28:20.089" endtime="20200425 23:28:21.762"></status>
 </kw>
 <kw name="Finaliza teste" library="Common" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:08:44.061" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:08:43.756" endtime="20200425 18:08:44.061"></status>
+<msg timestamp="20200425 23:28:22.083" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:21.763" endtime="20200425 23:28:22.083"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:43.755" endtime="20200425 18:08:44.061"></status>
+<status status="PASS" starttime="20200425 23:28:21.762" endtime="20200425 23:28:22.083"></status>
 </kw>
 <doc>RN01: Deve ser possível cadastrar um usuário em formulário especifico</doc>
 <tags>
 <tag>smoke</tag>
 </tags>
-<status status="PASS" starttime="20200425 18:08:17.191" endtime="20200425 18:08:44.061" critical="yes"></status>
+<status status="PASS" starttime="20200425 23:27:55.651" endtime="20200425 23:28:22.084" critical="yes"></status>
 </test>
 <test id="s1-t2" name="CT002: Efetuar login com sucesso">
 <kw name="Dado que estou na página de login" library="TestPractice_web">
@@ -415,11 +415,11 @@
 <arguments>
 <arg>${USER_LOGADO}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:44.096" level="INFO">Element 'xpath=//a[@title='View my customer account']/span' is displayed.</msg>
-<status status="PASS" starttime="20200425 18:08:44.065" endtime="20200425 18:08:44.096"></status>
+<msg timestamp="20200425 23:28:22.120" level="INFO">Element 'xpath=//a[@title='View my customer account']/span' is displayed.</msg>
+<status status="PASS" starttime="20200425 23:28:22.087" endtime="20200425 23:28:22.120"></status>
 </kw>
-<msg timestamp="20200425 18:08:44.096" level="INFO">${campo_nome} = True</msg>
-<status status="PASS" starttime="20200425 18:08:44.064" endtime="20200425 18:08:44.096"></status>
+<msg timestamp="20200425 23:28:22.120" level="INFO">${campo_nome} = True</msg>
+<status status="PASS" starttime="20200425 23:28:22.087" endtime="20200425 23:28:22.120"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -433,30 +433,30 @@
 <arguments>
 <arg>${LINK_LOGOUT}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:44.097" level="INFO">Clicking link 'xpath=//a[@class='logout']'.</msg>
-<status status="PASS" starttime="20200425 18:08:44.097" endtime="20200425 18:08:47.549"></status>
+<msg timestamp="20200425 23:28:22.121" level="INFO">Clicking link 'xpath=//a[@class='logout']'.</msg>
+<status status="PASS" starttime="20200425 23:28:22.121" endtime="20200425 23:28:24.190"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:44.097" endtime="20200425 18:08:47.550"></status>
+<status status="PASS" starttime="20200425 23:28:22.121" endtime="20200425 23:28:24.190"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:44.096" endtime="20200425 18:08:47.550"></status>
+<status status="PASS" starttime="20200425 23:28:22.120" endtime="20200425 23:28:24.190"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:47.550" level="INFO">Opening url 'http://automationpractice.com/'</msg>
-<status status="PASS" starttime="20200425 18:08:47.550" endtime="20200425 18:08:49.609"></status>
+<msg timestamp="20200425 23:28:24.191" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20200425 23:28:24.190" endtime="20200425 23:28:26.116"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>${TIULO_AUT_PAGINA}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:49.640" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200425 18:08:49.610" endtime="20200425 18:08:49.641"></status>
+<msg timestamp="20200425 23:28:26.142" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20200425 23:28:26.116" endtime="20200425 23:28:26.142"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:44.064" endtime="20200425 18:08:49.641"></status>
+<status status="PASS" starttime="20200425 23:28:22.087" endtime="20200425 23:28:26.142"></status>
 </kw>
 <kw name="Navegar para a tela de Cadastro e login" library="HomePage">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -464,19 +464,19 @@
 <arguments>
 <arg>${BTN_AUT_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:49.642" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
-<status status="PASS" starttime="20200425 18:08:49.641" endtime="20200425 18:08:51.695"></status>
+<msg timestamp="20200425 23:28:26.143" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
+<status status="PASS" starttime="20200425 23:28:26.143" endtime="20200425 23:28:27.546"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${LABEL_AUT_LOGIN}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:08:51.695" endtime="20200425 18:08:51.719"></status>
+<status status="PASS" starttime="20200425 23:28:27.547" endtime="20200425 23:28:27.568"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:49.641" endtime="20200425 18:08:51.719"></status>
+<status status="PASS" starttime="20200425 23:28:26.142" endtime="20200425 23:28:27.568"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:44.063" endtime="20200425 18:08:51.719"></status>
+<status status="PASS" starttime="20200425 23:28:22.086" endtime="20200425 23:28:27.568"></status>
 </kw>
 <kw name="Quando eu efetuo um login válido" library="TestPractice_web">
 <kw name="Logar na aplicação" library="AuthenticationPage">
@@ -490,8 +490,8 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:51.721" level="INFO">Typing text 'patricia32@yahoo.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20200425 18:08:51.721" endtime="20200425 18:08:51.867"></status>
+<msg timestamp="20200425 23:28:27.570" level="INFO">Typing text 'jfrey@gonzales.net' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200425 23:28:27.569" endtime="20200425 23:28:27.714"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -499,20 +499,20 @@
 <arg>${CAMPO_PASSWORD}</arg>
 <arg>${pass_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:51.867" level="INFO">Typing text 'pass123' into text field 'id=passwd'.</msg>
-<status status="PASS" starttime="20200425 18:08:51.867" endtime="20200425 18:08:51.983"></status>
+<msg timestamp="20200425 23:28:27.715" level="INFO">Typing text 'pass123' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20200425 23:28:27.714" endtime="20200425 23:28:27.828"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${BTN_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:51.983" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
-<status status="PASS" starttime="20200425 18:08:51.983" endtime="20200425 18:08:53.601"></status>
+<msg timestamp="20200425 23:28:27.829" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
+<status status="PASS" starttime="20200425 23:28:27.828" endtime="20200425 23:28:29.356"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:51.720" endtime="20200425 18:08:53.601"></status>
+<status status="PASS" starttime="20200425 23:28:27.569" endtime="20200425 23:28:29.356"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:51.720" endtime="20200425 18:08:53.602"></status>
+<status status="PASS" starttime="20200425 23:28:27.569" endtime="20200425 23:28:29.357"></status>
 </kw>
 <kw name="Então o sistema exibe o meu nome na área logada" library="TestPractice_web">
 <kw name="Validar login de participante" library="AuthenticationPage">
@@ -521,26 +521,26 @@
 <arguments>
 <arg>xpath=//a[@title='View my customer account']/span[.='${FIRST_NAME} ${LAST_NAME}']</arg>
 </arguments>
-<msg timestamp="20200425 18:08:53.628" level="INFO">Current page contains element 'xpath=//a[@title='View my customer account']/span[.='Linda Mckenzie']'.</msg>
-<status status="PASS" starttime="20200425 18:08:53.603" endtime="20200425 18:08:53.628"></status>
+<msg timestamp="20200425 23:28:29.381" level="INFO">Current page contains element 'xpath=//a[@title='View my customer account']/span[.='Christine Rodriguez']'.</msg>
+<status status="PASS" starttime="20200425 23:28:29.358" endtime="20200425 23:28:29.381"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:53.603" endtime="20200425 18:08:53.628"></status>
+<status status="PASS" starttime="20200425 23:28:29.358" endtime="20200425 23:28:29.381"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:53.602" endtime="20200425 18:08:53.628"></status>
+<status status="PASS" starttime="20200425 23:28:29.357" endtime="20200425 23:28:29.381"></status>
 </kw>
 <kw name="Finaliza teste" library="Common" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:08:54.022" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:08:53.628" endtime="20200425 18:08:54.022"></status>
+<msg timestamp="20200425 23:28:29.705" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:29.382" endtime="20200425 23:28:29.705"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:53.628" endtime="20200425 18:08:54.022"></status>
+<status status="PASS" starttime="20200425 23:28:29.382" endtime="20200425 23:28:29.705"></status>
 </kw>
 <doc>RN02: Deve ser possível logar-se na aplicação</doc>
 <tags>
 <tag>smoke</tag>
 </tags>
-<status status="PASS" starttime="20200425 18:08:44.063" endtime="20200425 18:08:54.023" critical="yes"></status>
+<status status="PASS" starttime="20200425 23:28:22.085" endtime="20200425 23:28:29.706" critical="yes"></status>
 </test>
 <test id="s1-t3" name="CT003: Login com dados inválidos">
 <kw name="Dado que estou na página de login" library="TestPractice_web">
@@ -559,11 +559,11 @@
 <arguments>
 <arg>${USER_LOGADO}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:54.095" level="INFO">Element 'xpath=//a[@title='View my customer account']/span' is displayed.</msg>
-<status status="PASS" starttime="20200425 18:08:54.028" endtime="20200425 18:08:54.095"></status>
+<msg timestamp="20200425 23:28:29.733" level="INFO">Element 'xpath=//a[@title='View my customer account']/span' is displayed.</msg>
+<status status="PASS" starttime="20200425 23:28:29.709" endtime="20200425 23:28:29.733"></status>
 </kw>
-<msg timestamp="20200425 18:08:54.096" level="INFO">${campo_nome} = True</msg>
-<status status="PASS" starttime="20200425 18:08:54.027" endtime="20200425 18:08:54.096"></status>
+<msg timestamp="20200425 23:28:29.733" level="INFO">${campo_nome} = True</msg>
+<status status="PASS" starttime="20200425 23:28:29.709" endtime="20200425 23:28:29.733"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -577,30 +577,30 @@
 <arguments>
 <arg>${LINK_LOGOUT}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:54.098" level="INFO">Clicking link 'xpath=//a[@class='logout']'.</msg>
-<status status="PASS" starttime="20200425 18:08:54.097" endtime="20200425 18:08:56.565"></status>
+<msg timestamp="20200425 23:28:29.735" level="INFO">Clicking link 'xpath=//a[@class='logout']'.</msg>
+<status status="PASS" starttime="20200425 23:28:29.734" endtime="20200425 23:28:31.718"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:54.096" endtime="20200425 18:08:56.566"></status>
+<status status="PASS" starttime="20200425 23:28:29.734" endtime="20200425 23:28:31.718"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:54.096" endtime="20200425 18:08:56.566"></status>
+<status status="PASS" starttime="20200425 23:28:29.734" endtime="20200425 23:28:31.718"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:56.567" level="INFO">Opening url 'http://automationpractice.com/'</msg>
-<status status="PASS" starttime="20200425 18:08:56.566" endtime="20200425 18:08:58.529"></status>
+<msg timestamp="20200425 23:28:31.719" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20200425 23:28:31.719" endtime="20200425 23:28:33.806"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>${TIULO_AUT_PAGINA}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:58.552" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200425 18:08:58.529" endtime="20200425 18:08:58.552"></status>
+<msg timestamp="20200425 23:28:33.830" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20200425 23:28:33.806" endtime="20200425 23:28:33.830"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:54.027" endtime="20200425 18:08:58.552"></status>
+<status status="PASS" starttime="20200425 23:28:29.708" endtime="20200425 23:28:33.830"></status>
 </kw>
 <kw name="Navegar para a tela de Cadastro e login" library="HomePage">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -608,19 +608,19 @@
 <arguments>
 <arg>${BTN_AUT_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:08:58.553" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
-<status status="PASS" starttime="20200425 18:08:58.553" endtime="20200425 18:09:00.169"></status>
+<msg timestamp="20200425 23:28:33.831" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
+<status status="PASS" starttime="20200425 23:28:33.830" endtime="20200425 23:28:35.834"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${LABEL_AUT_LOGIN}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:00.169" endtime="20200425 18:09:00.185"></status>
+<status status="PASS" starttime="20200425 23:28:35.834" endtime="20200425 23:28:35.850"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:58.553" endtime="20200425 18:09:00.186"></status>
+<status status="PASS" starttime="20200425 23:28:33.830" endtime="20200425 23:28:35.850"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:08:54.026" endtime="20200425 18:09:00.186"></status>
+<status status="PASS" starttime="20200425 23:28:29.708" endtime="20200425 23:28:35.850"></status>
 </kw>
 <kw name="Quando eu efetuo um login com dados inválidos" library="TestPractice_web">
 <arguments>
@@ -638,8 +638,8 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:00.187" level="INFO">Typing text 'wgetgv2@dj94j.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20200425 18:09:00.187" endtime="20200425 18:09:00.377"></status>
+<msg timestamp="20200425 23:28:35.852" level="INFO">Typing text 'wgetgv2@dj94j.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200425 23:28:35.852" endtime="20200425 23:28:35.989"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -647,20 +647,20 @@
 <arg>${CAMPO_PASSWORD}</arg>
 <arg>${pass_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:00.378" level="INFO">Typing text 'vtv2ergc' into text field 'id=passwd'.</msg>
-<status status="PASS" starttime="20200425 18:09:00.378" endtime="20200425 18:09:00.524"></status>
+<msg timestamp="20200425 23:28:35.990" level="INFO">Typing text 'vtv2ergc' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20200425 23:28:35.990" endtime="20200425 23:28:36.110"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${BTN_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:00.525" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
-<status status="PASS" starttime="20200425 18:09:00.524" endtime="20200425 18:09:01.647"></status>
+<msg timestamp="20200425 23:28:36.111" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
+<status status="PASS" starttime="20200425 23:28:36.110" endtime="20200425 23:28:37.445"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:00.187" endtime="20200425 18:09:01.647"></status>
+<status status="PASS" starttime="20200425 23:28:35.851" endtime="20200425 23:28:37.445"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:00.187" endtime="20200425 18:09:01.648"></status>
+<status status="PASS" starttime="20200425 23:28:35.851" endtime="20200425 23:28:37.445"></status>
 </kw>
 <kw name="Então o sistema exibe a mensagem &quot;Authentication failed.&quot;" library="TestPractice_web">
 <kw name="O sistema deve exibir mensagem de erro" library="AuthenticationPage">
@@ -675,8 +675,8 @@
 <assign>
 <var>${mensagem_tela}</var>
 </assign>
-<msg timestamp="20200425 18:09:01.687" level="INFO">${mensagem_tela} = Authentication failed.</msg>
-<status status="PASS" starttime="20200425 18:09:01.650" endtime="20200425 18:09:01.687"></status>
+<msg timestamp="20200425 23:28:37.482" level="INFO">${mensagem_tela} = Authentication failed.</msg>
+<status status="PASS" starttime="20200425 23:28:37.449" endtime="20200425 23:28:37.482"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -684,25 +684,25 @@
 <arg>${mensagem_erro}</arg>
 <arg>${mensagem_tela}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:01.687" endtime="20200425 18:09:01.688"></status>
+<status status="PASS" starttime="20200425 23:28:37.483" endtime="20200425 23:28:37.483"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:01.649" endtime="20200425 18:09:01.688"></status>
+<status status="PASS" starttime="20200425 23:28:37.448" endtime="20200425 23:28:37.489"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:01.648" endtime="20200425 18:09:01.688"></status>
+<status status="PASS" starttime="20200425 23:28:37.448" endtime="20200425 23:28:37.489"></status>
 </kw>
 <kw name="Finaliza teste" library="Common" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:09:02.008" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:09:01.689" endtime="20200425 18:09:02.008"></status>
+<msg timestamp="20200425 23:28:37.826" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:37.490" endtime="20200425 23:28:37.826"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:01.689" endtime="20200425 18:09:02.009"></status>
+<status status="PASS" starttime="20200425 23:28:37.490" endtime="20200425 23:28:37.826"></status>
 </kw>
 <doc>RN03: O sistema deve validar os dados de login impedindo acesso inválido</doc>
 <tags>
 <tag>exceção</tag>
 </tags>
-<status status="PASS" starttime="20200425 18:08:54.025" endtime="20200425 18:09:02.009" critical="yes"></status>
+<status status="PASS" starttime="20200425 23:28:29.707" endtime="20200425 23:28:37.827" critical="yes"></status>
 </test>
 <test id="s1-t4" name="CT004: Login inválido (email em branco)">
 <kw name="Dado que estou na página de login" library="TestPractice_web">
@@ -723,14 +723,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:09:07.345" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:09:07.044" endtime="20200425 18:09:07.345"></status>
+<msg timestamp="20200425 23:28:43.206" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:42.881" endtime="20200425 23:28:43.206"></status>
 </kw>
-<msg timestamp="20200425 18:09:07.347" level="FAIL">Element with locator 'xpath=//a[@title='View my customer account']/span' not found.</msg>
-<status status="FAIL" starttime="20200425 18:09:02.013" endtime="20200425 18:09:07.347"></status>
+<msg timestamp="20200425 23:28:43.208" level="FAIL">Element with locator 'xpath=//a[@title='View my customer account']/span' not found.</msg>
+<status status="FAIL" starttime="20200425 23:28:37.832" endtime="20200425 23:28:43.208"></status>
 </kw>
-<msg timestamp="20200425 18:09:07.348" level="INFO">${campo_nome} = False</msg>
-<status status="PASS" starttime="20200425 18:09:02.012" endtime="20200425 18:09:07.348"></status>
+<msg timestamp="20200425 23:28:43.208" level="INFO">${campo_nome} = False</msg>
+<status status="PASS" starttime="20200425 23:28:37.831" endtime="20200425 23:28:43.209"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -738,25 +738,25 @@
 <arg>${campo_nome}</arg>
 <arg>Deslogar da aplicação</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:07.348" endtime="20200425 18:09:07.348"></status>
+<status status="PASS" starttime="20200425 23:28:43.209" endtime="20200425 23:28:43.209"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:07.349" level="INFO">Opening url 'http://automationpractice.com/'</msg>
-<status status="PASS" starttime="20200425 18:09:07.349" endtime="20200425 18:09:09.779"></status>
+<msg timestamp="20200425 23:28:43.210" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20200425 23:28:43.210" endtime="20200425 23:28:45.606"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>${TIULO_AUT_PAGINA}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:09.813" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200425 18:09:09.780" endtime="20200425 18:09:09.814"></status>
+<msg timestamp="20200425 23:28:45.629" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20200425 23:28:45.606" endtime="20200425 23:28:45.629"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:02.012" endtime="20200425 18:09:09.814"></status>
+<status status="PASS" starttime="20200425 23:28:37.831" endtime="20200425 23:28:45.629"></status>
 </kw>
 <kw name="Navegar para a tela de Cadastro e login" library="HomePage">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -764,19 +764,19 @@
 <arguments>
 <arg>${BTN_AUT_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:09.840" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
-<status status="PASS" starttime="20200425 18:09:09.815" endtime="20200425 18:09:12.190"></status>
+<msg timestamp="20200425 23:28:45.630" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
+<status status="PASS" starttime="20200425 23:28:45.629" endtime="20200425 23:28:47.287"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${LABEL_AUT_LOGIN}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:12.190" endtime="20200425 18:09:12.204"></status>
+<status status="PASS" starttime="20200425 23:28:47.288" endtime="20200425 23:28:47.307"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:09.814" endtime="20200425 18:09:12.204"></status>
+<status status="PASS" starttime="20200425 23:28:45.629" endtime="20200425 23:28:47.307"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:02.012" endtime="20200425 18:09:12.204"></status>
+<status status="PASS" starttime="20200425 23:28:37.830" endtime="20200425 23:28:47.307"></status>
 </kw>
 <kw name="Quando eu efetuo um login com dados inválidos" library="TestPractice_web">
 <arguments>
@@ -794,8 +794,8 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:12.206" level="INFO">Typing text '' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20200425 18:09:12.205" endtime="20200425 18:09:12.291"></status>
+<msg timestamp="20200425 23:28:47.310" level="INFO">Typing text '' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200425 23:28:47.309" endtime="20200425 23:28:47.400"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -803,20 +803,20 @@
 <arg>${CAMPO_PASSWORD}</arg>
 <arg>${pass_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:12.292" level="INFO">Typing text 'pass123' into text field 'id=passwd'.</msg>
-<status status="PASS" starttime="20200425 18:09:12.291" endtime="20200425 18:09:12.411"></status>
+<msg timestamp="20200425 23:28:47.401" level="INFO">Typing text 'pass123' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20200425 23:28:47.401" endtime="20200425 23:28:47.520"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${BTN_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:12.411" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
-<status status="PASS" starttime="20200425 18:09:12.411" endtime="20200425 18:09:13.472"></status>
+<msg timestamp="20200425 23:28:47.521" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
+<status status="PASS" starttime="20200425 23:28:47.521" endtime="20200425 23:28:48.806"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:12.205" endtime="20200425 18:09:13.473"></status>
+<status status="PASS" starttime="20200425 23:28:47.309" endtime="20200425 23:28:48.806"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:12.205" endtime="20200425 18:09:13.473"></status>
+<status status="PASS" starttime="20200425 23:28:47.308" endtime="20200425 23:28:48.806"></status>
 </kw>
 <kw name="Então o sistema exibe a mensagem &quot;An email address required.&quot;" library="TestPractice_web">
 <kw name="O sistema deve exibir mensagem de erro" library="AuthenticationPage">
@@ -831,8 +831,8 @@
 <assign>
 <var>${mensagem_tela}</var>
 </assign>
-<msg timestamp="20200425 18:09:13.515" level="INFO">${mensagem_tela} = An email address required.</msg>
-<status status="PASS" starttime="20200425 18:09:13.475" endtime="20200425 18:09:13.516"></status>
+<msg timestamp="20200425 23:28:48.844" level="INFO">${mensagem_tela} = An email address required.</msg>
+<status status="PASS" starttime="20200425 23:28:48.808" endtime="20200425 23:28:48.844"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -840,25 +840,25 @@
 <arg>${mensagem_erro}</arg>
 <arg>${mensagem_tela}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:13.516" endtime="20200425 18:09:13.516"></status>
+<status status="PASS" starttime="20200425 23:28:48.844" endtime="20200425 23:28:48.845"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:13.474" endtime="20200425 18:09:13.517"></status>
+<status status="PASS" starttime="20200425 23:28:48.808" endtime="20200425 23:28:48.845"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:13.474" endtime="20200425 18:09:13.517"></status>
+<status status="PASS" starttime="20200425 23:28:48.807" endtime="20200425 23:28:48.845"></status>
 </kw>
 <kw name="Finaliza teste" library="Common" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:09:13.852" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:09:13.518" endtime="20200425 18:09:13.852"></status>
+<msg timestamp="20200425 23:28:49.179" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:48.846" endtime="20200425 23:28:49.179"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:13.517" endtime="20200425 18:09:13.852"></status>
+<status status="PASS" starttime="20200425 23:28:48.846" endtime="20200425 23:28:49.179"></status>
 </kw>
 <doc>RN03: O sistema deve validar os dados de login impedindo acesso inválido</doc>
 <tags>
 <tag>exceção</tag>
 </tags>
-<status status="PASS" starttime="20200425 18:09:02.010" endtime="20200425 18:09:13.853" critical="yes"></status>
+<status status="PASS" starttime="20200425 23:28:37.829" endtime="20200425 23:28:49.179" critical="yes"></status>
 </test>
 <test id="s1-t5" name="CT005: Login inválido (password em branco)">
 <kw name="Dado que estou na página de login" library="TestPractice_web">
@@ -879,14 +879,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:09:19.227" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:09:18.917" endtime="20200425 18:09:19.227"></status>
+<msg timestamp="20200425 23:28:54.480" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:54.192" endtime="20200425 23:28:54.480"></status>
 </kw>
-<msg timestamp="20200425 18:09:19.228" level="FAIL">Element with locator 'xpath=//a[@title='View my customer account']/span' not found.</msg>
-<status status="FAIL" starttime="20200425 18:09:13.858" endtime="20200425 18:09:19.228"></status>
+<msg timestamp="20200425 23:28:54.481" level="FAIL">Element with locator 'xpath=//a[@title='View my customer account']/span' not found.</msg>
+<status status="FAIL" starttime="20200425 23:28:49.183" endtime="20200425 23:28:54.481"></status>
 </kw>
-<msg timestamp="20200425 18:09:19.228" level="INFO">${campo_nome} = False</msg>
-<status status="PASS" starttime="20200425 18:09:13.857" endtime="20200425 18:09:19.228"></status>
+<msg timestamp="20200425 23:28:54.481" level="INFO">${campo_nome} = False</msg>
+<status status="PASS" starttime="20200425 23:28:49.182" endtime="20200425 23:28:54.481"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -894,25 +894,25 @@
 <arg>${campo_nome}</arg>
 <arg>Deslogar da aplicação</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:19.229" endtime="20200425 18:09:19.229"></status>
+<status status="PASS" starttime="20200425 23:28:54.482" endtime="20200425 23:28:54.482"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:19.230" level="INFO">Opening url 'http://automationpractice.com/'</msg>
-<status status="PASS" starttime="20200425 18:09:19.229" endtime="20200425 18:09:22.121"></status>
+<msg timestamp="20200425 23:28:54.482" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20200425 23:28:54.482" endtime="20200425 23:28:56.652"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>${TIULO_AUT_PAGINA}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:22.155" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20200425 18:09:22.121" endtime="20200425 18:09:22.155"></status>
+<msg timestamp="20200425 23:28:56.681" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20200425 23:28:56.652" endtime="20200425 23:28:56.681"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:13.857" endtime="20200425 18:09:22.155"></status>
+<status status="PASS" starttime="20200425 23:28:49.182" endtime="20200425 23:28:56.681"></status>
 </kw>
 <kw name="Navegar para a tela de Cadastro e login" library="HomePage">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -920,19 +920,19 @@
 <arguments>
 <arg>${BTN_AUT_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:22.157" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
-<status status="PASS" starttime="20200425 18:09:22.156" endtime="20200425 18:09:26.785"></status>
+<msg timestamp="20200425 23:28:56.682" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
+<status status="PASS" starttime="20200425 23:28:56.682" endtime="20200425 23:28:58.143"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${LABEL_AUT_LOGIN}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:26.785" endtime="20200425 18:09:26.802"></status>
+<status status="PASS" starttime="20200425 23:28:58.143" endtime="20200425 23:28:58.160"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:22.155" endtime="20200425 18:09:26.802"></status>
+<status status="PASS" starttime="20200425 23:28:56.682" endtime="20200425 23:28:58.160"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:13.856" endtime="20200425 18:09:26.802"></status>
+<status status="PASS" starttime="20200425 23:28:49.181" endtime="20200425 23:28:58.160"></status>
 </kw>
 <kw name="Quando eu efetuo um login com dados inválidos" library="TestPractice_web">
 <arguments>
@@ -950,8 +950,8 @@
 <arg>${CAMPO_EMAIL}</arg>
 <arg>${email_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:26.804" level="INFO">Typing text 'patricia32@yahoo.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20200425 18:09:26.804" endtime="20200425 18:09:26.972"></status>
+<msg timestamp="20200425 23:28:58.162" level="INFO">Typing text 'jfrey@gonzales.net' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200425 23:28:58.162" endtime="20200425 23:28:58.427"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -959,20 +959,20 @@
 <arg>${CAMPO_PASSWORD}</arg>
 <arg>${pass_login}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:26.973" level="INFO">Typing text '' into text field 'id=passwd'.</msg>
-<status status="PASS" starttime="20200425 18:09:26.973" endtime="20200425 18:09:27.076"></status>
+<msg timestamp="20200425 23:28:58.428" level="INFO">Typing text '' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20200425 23:28:58.428" endtime="20200425 23:28:58.566"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${BTN_LOGIN}</arg>
 </arguments>
-<msg timestamp="20200425 18:09:27.076" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
-<status status="PASS" starttime="20200425 18:09:27.076" endtime="20200425 18:09:28.357"></status>
+<msg timestamp="20200425 23:28:58.567" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
+<status status="PASS" starttime="20200425 23:28:58.566" endtime="20200425 23:28:59.931"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:26.803" endtime="20200425 18:09:28.358"></status>
+<status status="PASS" starttime="20200425 23:28:58.161" endtime="20200425 23:28:59.932"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:26.803" endtime="20200425 18:09:28.358"></status>
+<status status="PASS" starttime="20200425 23:28:58.161" endtime="20200425 23:28:59.932"></status>
 </kw>
 <kw name="Então o sistema exibe a mensagem &quot;Password is required.&quot;" library="TestPractice_web">
 <kw name="O sistema deve exibir mensagem de erro" library="AuthenticationPage">
@@ -987,8 +987,8 @@
 <assign>
 <var>${mensagem_tela}</var>
 </assign>
-<msg timestamp="20200425 18:09:28.405" level="INFO">${mensagem_tela} = Password is required.</msg>
-<status status="PASS" starttime="20200425 18:09:28.359" endtime="20200425 18:09:28.405"></status>
+<msg timestamp="20200425 23:28:59.968" level="INFO">${mensagem_tela} = Password is required.</msg>
+<status status="PASS" starttime="20200425 23:28:59.941" endtime="20200425 23:28:59.968"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -996,35 +996,35 @@
 <arg>${mensagem_erro}</arg>
 <arg>${mensagem_tela}</arg>
 </arguments>
-<status status="PASS" starttime="20200425 18:09:28.405" endtime="20200425 18:09:28.405"></status>
+<status status="PASS" starttime="20200425 23:28:59.969" endtime="20200425 23:28:59.969"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:28.359" endtime="20200425 18:09:28.405"></status>
+<status status="PASS" starttime="20200425 23:28:59.940" endtime="20200425 23:28:59.969"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:28.359" endtime="20200425 18:09:28.406"></status>
+<status status="PASS" starttime="20200425 23:28:59.939" endtime="20200425 23:28:59.969"></status>
 </kw>
 <kw name="Finaliza teste" library="Common" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200425 18:09:28.719" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200425 18:09:28.407" endtime="20200425 18:09:28.719"></status>
+<msg timestamp="20200425 23:29:00.326" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200425 23:28:59.970" endtime="20200425 23:29:00.326"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:28.406" endtime="20200425 18:09:28.719"></status>
+<status status="PASS" starttime="20200425 23:28:59.970" endtime="20200425 23:29:00.326"></status>
 </kw>
 <doc>RN03: O sistema deve validar os dados de login impedindo acesso inválido</doc>
 <tags>
 <tag>exceção</tag>
 </tags>
-<status status="PASS" starttime="20200425 18:09:13.855" endtime="20200425 18:09:28.720" critical="yes"></status>
+<status status="PASS" starttime="20200425 23:28:49.181" endtime="20200425 23:29:00.327" critical="yes"></status>
 </test>
 <kw name="Conclui cenario" library="Common" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200425 18:09:28.723" endtime="20200425 18:09:30.919"></status>
+<status status="PASS" starttime="20200425 23:29:00.330" endtime="20200425 23:29:02.541"></status>
 </kw>
-<status status="PASS" starttime="20200425 18:09:28.722" endtime="20200425 18:09:30.920"></status>
+<status status="PASS" starttime="20200425 23:29:00.330" endtime="20200425 23:29:02.543"></status>
 </kw>
 <doc>Cenários solicitados como avaliação de automação e boas práticas</doc>
-<status status="PASS" starttime="20200425 18:08:11.063" endtime="20200425 18:09:30.920"></status>
+<status status="PASS" starttime="20200425 23:27:49.372" endtime="20200425 23:29:02.543"></status>
 </suite>
 <statistics>
 <total>
