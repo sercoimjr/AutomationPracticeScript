@@ -4,7 +4,7 @@ Library     SeleniumLibrary
 *** Variable ***
 
 #Acessar a home page da aplicação
-${USER_LOGADO}          xpath=//a[@class='account']/span
+${USER_LOGADO}          xpath=//a[@class='account']
 ${TIULO_AUT_PAGINA}     My Store
 
 #Navegar para a tela de Cadastro e login 

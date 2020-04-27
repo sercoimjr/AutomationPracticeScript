@@ -6,7 +6,7 @@ Library     SeleniumLibrary
 Inicia cenario
     Open Browser                about:blank       ${BROWSER}
     Set Window Size             1200              800
-    Set Selenium implicit wait  5
+    Set Selenium implicit wait  7
 
     #Keyword que utiliza dados randomicos para geração de massa para novo cadastro
     #criada no arquivo DataElements.robot
