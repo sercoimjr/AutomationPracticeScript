@@ -38,7 +38,7 @@ CT002: Efetuar login com sucesso
 #Testes de exceção com passagem de parametros para a mesma keyword que é chamada pelos 3 diferentes cenarios
 #CT003 envia dados invalidos para email e login
 CT003: Login com dados inválidos
-    [Tags]      exceção
+    [Tags]      excecao
     [Documentation]     RN03: O sistema deve validar os dados de login impedindo acesso inválido
 
     Dado que estou na página de login
@@ -48,7 +48,7 @@ CT003: Login com dados inválidos
 
 #CT004 não envia email, e envia um password cadastrado
 CT004: Login inválido (email em branco)
-    [Tags]      exceção
+    [Tags]      excecao
     [Documentation]     RN03: O sistema deve validar os dados de login impedindo acesso inválido
     
     Dado que estou na página de login
@@ -58,7 +58,7 @@ CT004: Login inválido (email em branco)
 
 #CT005 envia email cadastrado, e não envia password
 CT005: Login inválido (password em branco)
-    [Tags]      exceção
+    [Tags]      excecao
     [Documentation]     RN03: O sistema deve validar os dados de login impedindo acesso inválido
 
     Dado que estou na página de login
