@@ -28,3 +28,5 @@ O sistema não permite a exclusão do usuário cadastrado, logo não é possivel
 Neste caso existem tres opções, ou se utiliza uma entrada de dados externa (Data Driven), uma geração de massa randomica, ou se altera na mão a massa de testes, a cada nova bateria de testes.
 
 Utilizei a abordagem de geração de massa randômica para cada cadastro, então as variaveis _first_name, last_name e email_ são setadas randomicamente no arquivo Common.robot, utilizando biblioteca Faker do Robotframework.
+
+Alteração para disparo do Jenkins - teste
