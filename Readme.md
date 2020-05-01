@@ -12,7 +12,9 @@ Site: http://automationpractice.com/
     * Login inválido (mantendo um dos campos sem preenchimento)
 
 **Cenários**
+
 Criação de cenarios em Gherkin (BDD).
+
     * 1ª camada em abstração Gherkin,
     * 2ª camada em abordagem descritiva,
     * 3ª camada usando Page Objects.
@@ -26,21 +28,21 @@ Relatório gerado pela ferramenta e disponivel para consulta, no diretório **Re
 O script esta setado em seu código para ser executado pelo chrome, porém o browser pode ser alterado diretamente pela linha de comando para execução do script, alterando a variavel _BROWSER_ para ie, chrome, headlessechrome, safari, etc.
 
 EX:
-```python
+```javascript
     robot -d result --reporttitle "Test Practice - Test Report" --logtitle "Test Practice - Log Report"  -v BROWSER:headlessfirefox test/testpractice.robot
 ```
 Este comando executa a suite de testes testpractice.robot armazenando o relatorio no diretório _Result_, com o browser firefox em headless mode, e também customizando o título do relatório gerado.
 
 ## Amostra do relatório
 
-![](result/log03.jpg)
+![](result/log03.png)
 
-![](result/log01.jpg)
+![](result/log01.png)
 
-![](result/log02.jpg)
+![](result/log02.png)
 
 
-## Ressalvas:
+## Ressalvas
 Adicionei arquivo gitignore apenas para não versionar arquivo de log do webdriver. O relatório gerado será armazenado para mostrar o formato do report.
 
 Ao longo do script eu inseri comentarios para explicar o fluxo ou sobre algum tipo de limitação na aplicação, como por exemplo para a exclusão de um usuário já existente. 
