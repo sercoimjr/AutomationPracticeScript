@@ -35,11 +35,13 @@ Este comando executa a suite de testes testpractice.robot armazenando o relatori
 
 ## Amostra do relatório
 
-![](images/log03.png)
-
 ![](images/log01.png)
 
+
 ![](images/log02.png)
+
+
+![](images/log03.png)
 
 
 ## Ressalvas
